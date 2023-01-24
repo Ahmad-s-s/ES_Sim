@@ -3,7 +3,7 @@ package Var;
 import javax.swing.*;
 
 public class Icons {
-    public static ImageIcon add = new ImageIcon("Var/icons8-add-64.png");
+    public static ImageIcon add = new ImageIcon("icons8-add-64.png");
     public static ImageIcon done = new ImageIcon("icons8-done-64.png");
     public static ImageIcon save = new ImageIcon("Var/icons8-save-64.png");
     public static ImageIcon error = new ImageIcon("Var/icons8-error-64.png");
