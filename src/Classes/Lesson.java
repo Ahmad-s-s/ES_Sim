@@ -72,7 +72,7 @@ public class Lesson {
             for (int j = 0; j < 4; j++) {
                 StringBuilder builder = new StringBuilder();
                 builder.append("Option ");
-                builder.append(i + 1);
+                builder.append(j + 1);
                 options.add(JOptionPane.showInputDialog(builder));
             }
             int correct_option = Integer.parseInt(JOptionPane.showInputDialog("Which one is correct ? "));

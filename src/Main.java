@@ -1,14 +1,10 @@
-
-
 import Classes.*;
 import Clients.AllObj;
 import Clients.Expert;
 import Clients.Student;
 import Clients.Master;
 import Var.Icons;
-
 import javax.swing.*;
-import javax.xml.crypto.Data;
 
 import java.io.File;
 import java.io.FileWriter;
