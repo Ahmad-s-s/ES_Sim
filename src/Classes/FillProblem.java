@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class FillProblem extends Problem {
 
-    FillProblem(String title, String solution) {
+    public FillProblem(String title, String solution) {
         super(title, solution);
     }
 

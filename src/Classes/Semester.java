@@ -13,13 +13,14 @@ public class Semester {
     Date scoreDate;
 
     public ArrayList<Lesson> myLessons;
-    int t_lessons;
+    public int t_lessons;
     public Semester(String title, Date begin, Date end, Date scoreDate) {
         this.title = title;
         this.begin = begin;
         this.end = end;
         this.scoreDate = scoreDate;
         myLessons = new ArrayList<>();
+        t_lessons = 0;
     }
 
     public void addLesson() {
@@ -37,6 +38,7 @@ public class Semester {
                     JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
             this.myLessons.add(AllObj.lessons.get(choice));
         }
+        t_lessons += 1;
     }
 
     public String getTitle() {

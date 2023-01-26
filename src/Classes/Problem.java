@@ -1,8 +1,8 @@
 package Classes;
 
 abstract public class Problem {
-    String title;
-    String solution;
+    public String title;
+    public String solution;
     Problem(String title, String solution) {
         this.title = title;
         this.solution = solution;

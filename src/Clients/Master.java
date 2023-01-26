@@ -9,9 +9,9 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class Master extends Client {
-    ArrayList<Lesson> myLessons;
+    public ArrayList<Lesson> myLessons;
 
-    Master(String name, String lastName, String userName, String password) {
+    public Master(String name, String lastName, String userName, String password) {
         super(name, lastName, userName, password);
         myLessons = new ArrayList<>();
     }

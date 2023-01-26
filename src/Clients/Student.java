@@ -9,10 +9,10 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class Student extends Client {
-    ArrayList<Lesson> signedLesson;
-    int t_lesson;
+    public ArrayList<Lesson> signedLesson;
+    public int t_lesson;
 
-    Student(String name, String lastName, String userName, String password) {
+    public Student(String name, String lastName, String userName, String password) {
         super(name, lastName, userName, password);
         this.signedLesson = new ArrayList<>();
         t_lesson = 0;
