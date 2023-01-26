@@ -88,6 +88,11 @@ public class Expert extends Client {
         if (option == 1) {
             return;
         }
+        if (AllObj.lessons.isEmpty()){
+            JOptionPane.showMessageDialog(null,
+                    "No lesson available to present in this semester", "Define semester",
+                    JOptionPane.ERROR_MESSAGE);
+        }
 
         String title = JOptionPane.showInputDialog(null,
                 "The semester title : ", "set title",

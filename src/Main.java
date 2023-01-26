@@ -12,19 +12,6 @@ import static java.lang.System.exit;
 
 public class Main {
     public static void main(String[] args) {
-//        System.out.println("Hello world!");
-//        JOptionPane.showMessageDialog(null, "Hello", "title", JOptionPane.PLAIN_MESSAGE);
-//        JOptionPane.showMessageDialog(null, "Hello", "title", JOptionPane.INFORMATION_MESSAGE);
-//        JOptionPane.showMessageDialog(null, "Hello", "title", JOptionPane.QUESTION_MESSAGE);
-//        JOptionPane.showMessageDialog(null, "Hello", "title", JOptionPane.WARNING_MESSAGE);
-//        JOptionPane.showMessageDialog(null, "Hello", "title", JOptionPane.ERROR_MESSAGE);
-
-//        JOptionPane.showConfirmDialog(null, "bro did you code ?",
-//                "title", JOptionPane.OK_CANCEL_OPTION);
-//        JOptionPane.showConfirmDialog(null, "Q?", "title", JOptionPane.YES_NO_CANCEL_OPTION);
-
-//        System.out.println(JOptionPane.showInputDialog(null, "Your name : ", "title",
-//                JOptionPane.INFORMATION_MESSAGE));
         String[] clients = {"Expert", "Master", "Student", "Exit"};
         while (true){
             int choice = JOptionPane.showOptionDialog(null, "Which client do you want to login as ?",
@@ -37,7 +24,10 @@ public class Main {
             } else if (choice == 2){
                 studentLogin();
             }else {
-                exit(0);
+                int ok = JOptionPane.showConfirmDialog(null, "DO you want to exit the app ?",
+                        "Exit confirm", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null);
+                if (ok == 0 || ok == -1)
+                    exit(0);
             }
         }
 

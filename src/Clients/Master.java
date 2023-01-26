@@ -17,6 +17,12 @@ public class Master extends Client {
     }
 
     public void addLesson() {
+        if (AllObj.semesters.size() == 0){
+            JOptionPane.showMessageDialog(null,
+                    "No semester added yet!", "Add lesson",
+                    JOptionPane.ERROR_MESSAGE);
+            return;
+        }
         String[] semesters = new String[AllObj.semesters.size()];
         for (int i = 0; i < AllObj.semesters.size(); i++) {
             semesters[i] = AllObj.semesters.get(i).getTitle();
@@ -50,6 +56,11 @@ public class Master extends Client {
     }
 
     public void addExam() {
+        if (this.myLessons.isEmpty()){
+            JOptionPane.showMessageDialog(null,
+                    "No lesson added!", "Add exam",
+                    JOptionPane.ERROR_MESSAGE);
+        }
         String[] options = new String[this.myLessons.size()];
         for (int i = 0; i < this.myLessons.size(); i++) {
             options[i] = myLessons.get(i).getTitle();

@@ -48,6 +48,12 @@ public class Student extends Client {
     }
 
     public void takeExam() {
+        if (t_lesson == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "You haven't signed in any lesson yet.","Take Exam",
+                    JOptionPane.ERROR_MESSAGE);
+            return;
+        }
         String[] options = new String[t_lesson];
         for (int i = 0; i < t_lesson; i++) {
             options[i] = this.signedLesson.get(i).getTitle();
